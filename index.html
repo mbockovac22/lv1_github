@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stranica</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+<div>
+	Naziv predmeta
+	<br>
+	<input type='text' id='nazivPredmeta' placeholder="nazivPredmeta">
+	<br>
+Godina
+	<br>
+	<input type='text' id='godina' placeholder="godina">
+	<br>
+Broj ECTS bodova
+	<br>
+	<input type='text' id='ECTS' placeholder="ECTS"> 
+	<br>
+	
+	<button type="button" onclick="Dodaj()" id='sendButton'>Posalji</button>
+
+</div>
+
+<div>
+<table id='mainTable'>
+<tr>
+    <th>Naziv predmeta</th>
+    <th>Godina</th>
+    <th>ECTS</th>
+ </tr>
+
+</table>
+
+
+</div>
+<script src='js/app.js'></script>
+</body>
+</html>
