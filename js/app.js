@@ -7,6 +7,18 @@ btn.addEventListener("click", function() {
 
 }, false);
 */
+function promjeniBoju(btn){
+	if(document.getElementById('boja').checked){
+		var row = btn.parentNode.parentNode;
+  		row.style.backgroundColor='Blue';	
+	}
+	else{
+	var row = btn.parentNode.parentNode;
+  		row.style.backgroundColor='White';		
+	}
+	
+	
+}
 
 function Obrisi(btn){
 	 var row = btn.parentNode.parentNode;
@@ -25,9 +37,11 @@ function Dodaj(){
 	var cell2 = row.insertCell(1);
 	var cell3 = row.insertCell(2);
 	var cell4 = row.insertCell(3);
+	var cell5 = row.insertCell(4);
 
 cell1.innerHTML=input1;
 cell2.innerHTML=input2;
 cell3.innerHTML=input3;
 cell4.innerHTML="<button type='button' onclick='Obrisi(this)' id='obrisiButton'>Obrisi</button>";
+cell5.innerHTML="<input type='checkbox' id='boja' onclick='promjeniBoju(this)'>";
 }
